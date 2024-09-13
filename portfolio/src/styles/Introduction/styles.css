@@ -1,0 +1,30 @@
+.profile-container{
+    border-radius: 200px;
+    width:100%;
+    height:auto
+}
+
+.intro-container{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+}
+.image{
+    flex:1;
+    padding:20px;
+    background-color: red;
+}
+
+.description{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    background-color: blue;
+    align-items: center;
+    padding:10px
+}
+
+.first{
+    background-color: grey;
+}
