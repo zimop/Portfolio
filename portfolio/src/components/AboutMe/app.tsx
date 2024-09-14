@@ -14,13 +14,15 @@ const AboutMe: FC = () => {
           <h1>
             About Me
           </h1>
-          <div>
-            I have a keen interest in all aspects of Web development, especially the Frontend 
-            World 
-            When people ask me to describe myself and my passion for developing, I usually can't pin it down to one thing. 
-            Here are the things that fuel 
-            I am a passionate junior developer who wants to make an impact with the code that I write. I am always looking for 
-            opportunities to 
+          <div className = "web-development">
+            I have a keen interest in all aspects of Web development, especially the Frontend World. 
+            I am passionate about providing the best outcomes for User Experience, by integrating
+            design ideas from multiple perspectives.
+          </div>
+          <div className = "ai">
+            I have recently developed a fascination for Artificial Intelligence,
+            especially Generative AI and Computer Vision. I've enjoyed exploring these new
+            and exciting domains, some of which I have used in this website!
           </div>
         </div>
       </>

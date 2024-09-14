@@ -1,0 +1,9 @@
+.nav{
+    justify-content: space-between;
+    background-color: red
+}
+
+.btn-container{
+    background-color:transparent;
+    border: none
+}

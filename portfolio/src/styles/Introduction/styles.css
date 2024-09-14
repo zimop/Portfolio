@@ -8,23 +8,25 @@
     text-align: center;
     display: flex;
     flex-direction: row;
-    width: 40%;
+
 }
 .image{
-    flex:1;
     padding:20px;
-    background-color: red;
+    height:auto;
+    width: 200px;
 }
 
 .description{
     display: flex;
-    flex:1;
     flex-direction: column;
-    background-color: blue;
     align-items: center;
+    justify-content: center;
     padding:10px
 }
 
 .first{
-    background-color: grey;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
