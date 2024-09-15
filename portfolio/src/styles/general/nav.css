@@ -5,5 +5,12 @@
 
 .btn-container{
     background-color:transparent;
-    border: none
+    border: solid;
+    border-color: #64B5F6;
+    border-radius: 10%;
+}
+
+.icon{
+    background-color:transparent;
+    border: none;
 }
