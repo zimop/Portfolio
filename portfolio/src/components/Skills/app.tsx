@@ -1,22 +1,23 @@
 import React, { FC, useState} from 'react';
 import Hamburger from 'hamburger-react'
 import { slide as Menu } from 'react-burger-menu'
-import './../../styles/AboutMe/styles.css'
-import zimo from './../../images/pictures/zimo-profile.png'
-import { TypeAnimation } from 'react-type-animation';
+import './../../styles/Skills/styles.css'
+import Marquee from "react-fast-marquee";
+import GridIcons from '../general/grid';
 
 
 
 const Skills: FC = () => {
     return (
       <>
-        <div className = "cont">
-          <h1>
-            Skills
-          </h1>
-          <div>
-            
+        <div className = "all">
+          <div className = "">
+            <h1>
+              Skills
+            </h1>
           </div>
+          <GridIcons/>
+    
         </div>
       </>
     );
