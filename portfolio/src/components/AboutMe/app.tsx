@@ -3,7 +3,6 @@ import Hamburger from 'hamburger-react'
 import { slide as Menu } from 'react-burger-menu'
 import './../../styles/AboutMe/styles.css'
 import zimo from './../../images/pictures/zimo-profile.png'
-import ImageCarousel from '../general/carousel';
 import { TypeAnimation } from 'react-type-animation';
 import Marquee from 'react-fast-marquee';
 
