@@ -16,6 +16,7 @@ const SkillIcon: FC<SkillsProps> = ({img, description}) => {
         {!isHovered && (
           <img 
           src = {img}
+          style = {{width: "90px"}}
           onMouseEnter={() => setIsHovered(true)}
           />
         )}
@@ -25,6 +26,7 @@ const SkillIcon: FC<SkillsProps> = ({img, description}) => {
           animate={{ opacity: 1, scale: 1, rotate: 360}}
           transition={{ duration: 0.5 }}
           src = {img}
+          style = {{width: "90px"}}
           onMouseEnter={() => setIsHovered(true)}
         />
         )}
@@ -34,7 +36,7 @@ const SkillIcon: FC<SkillsProps> = ({img, description}) => {
             opacity: isHovered ? 1 : 0, // Optional: Smooth transition
             transition: 'opacity 0.3s ease-in-out', // Smooth fade-in effect
             fontWeight: "bold",
-            fontSize:"20px"
+            fontSize:"20px",
             }}
           className = "name"
         >
