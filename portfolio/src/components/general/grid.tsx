@@ -8,74 +8,43 @@ import javascript from './../../images/icons/javascript-1.svg'
 import kotlin from './../../images/icons/kotlin-2.svg'
 import next from './../../images/icons/nextjs-svgrepo-com.svg'
 import react from './../../images/icons/react-brands-solid(1).svg'
-import reactnative from './../../images/icons/react-native-1.svg'
 import sql from './../../images/icons/sql-file-format-svgrepo-com.svg'
 import tailwind from './../../images/icons/tailwind-css-1.svg'
-import tensorflow from './../../images/icons/tensorflow-2.svg'
 import typescript from './../../images/icons/typescript.svg'
 import python from './../../images/icons/python-5.svg'
 import './../../styles/general/grid.css'
-import { Typography } from '@mui/material';
+import SkillIcon from './skill';
+
+interface Image {
+    img: string;
+    desc: string;
+  }
+
+const images: Image[] = [
+    { img: github, desc: 'GitHub'},
+    { img: c, desc: 'C++' },
+    { img: aws, desc: 'AWS' },
+    { img: java, desc: 'Java' },
+    { img: javascript, desc: 'JavaScript' },
+    { img: kotlin, desc: 'Kotlin' },
+    { img: next, desc: 'Next.js' },
+    { img: react, desc: 'React' },
+    { img: typescript, desc: 'TypeScript' },
+    { img: sql, desc: 'SQL' },
+    { img: tailwind, desc: 'Tailwind' },
+    { img: python, desc: 'Python' }
+  ];
 
 const GridIcons: FC = () => {
-    const [isHovered, setIsHovered] = useState(false);
-    const [isHovered2, setIsHovered2] = useState(false);
     return (
       <>
         <div className = "grid-container">
-            <Grid container spacing={10} columns = {{sm: 4, md:4, lg:4}}>
-                <Grid size={1}>
-                    <img 
-                        src = {aws}
-                        onMouseEnter={() => setIsHovered(true)}>
-                    </img>
-                    {isHovered && (
-                        <Typography>
-                            AWS
-                        </Typography>
-                    )}
-                </Grid>
-                <Grid size={1}>
-                    <img 
-                        src = {c}
-                        onMouseEnter={() => setIsHovered2(true)}>
-                    </img>
-                    {isHovered2 && (
-                        <Typography>
-                            c
-                        </Typography>
-                    )}
-                </Grid>
-                <Grid size={1}>
-                    <img src = {github}></img>
-                </Grid>
-                <Grid size={1}>
-                    <img src = {java}></img>
-                </Grid>
-                <Grid size={1}>
-                    <img src = {javascript}></img>
-                </Grid>
-                <Grid size={1}>
-                    <img src = {kotlin}></img>
-                </Grid>
-                <Grid size={1}>
-                    <img src = {next}></img>
-                </Grid>
-                <Grid size={1}>
-                    <img src = {react}></img>
-                </Grid>
-                <Grid size={1}>
-                    <img src = {typescript}></img>
-                </Grid>
-                <Grid size={1}>
-                    <img src = {sql}></img>
-                </Grid>
-                <Grid size={1}>
-                    <img src = {tailwind}></img>
-                </Grid>
-                <Grid size={1}>
-                    <img src = {python}></img>
-                </Grid>
+            <Grid container spacing={7} columns = {{sm: 4, md:4, lg:4}}>
+                {images.map((image: Image, index: number) => (
+                    <Grid key={index} size={1}>
+                        <SkillIcon img = {image.img} description={image.desc}></SkillIcon>
+                    </Grid>
+                ))}
             </Grid>
         </div>
       </>

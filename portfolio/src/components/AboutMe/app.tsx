@@ -18,7 +18,7 @@ const AboutMe: FC = () => {
           <div className = "web-dev">
             I have a keen interest in all aspects of Web development, especially the Frontend World. 
             I am passionate about providing the best outcomes for User Experience.<br/>
-            I also have a fascination for Artificial Intelligence. Here are some of the topics that interest me:
+            I am fascinated by Artificial Intelligence. Here are some of the topics that interest me:
           </div>
           <Marquee>
             I can be a React component, multiple React components, or just some text.
