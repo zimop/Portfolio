@@ -12,13 +12,34 @@
     text-align: center;
     display: flex;
     flex-direction: row;
-    height: 500px;
-    width: 50%;
+    width: 70%;
     position: relative;
     background-color: #325a9f;
     border-radius: 10px;
     border: 4px solid;
+    padding:30px;
 }
+
+@media (min-width: 768px) { /* Medium screens (tablets and small desktops) */
+  .intro-container {
+    width: 60%;
+  }
+
+  h1{
+    font-size: 1vw;
+  }
+}
+
+@media (min-width: 1200px) { /* Large screens (desktops and large devices) */
+  .intro-container {
+    width: 50%;
+  }
+
+  h1{
+    font-size: 3vw;
+  }
+}
+
 .image{
     padding:20px;
     height:auto;
@@ -36,7 +57,7 @@
     justify-content: center;
     flex:1;
     text-align: left;
-    padding-left: 60px;
+    padding-left: 20px;
 }
 
 .first{
@@ -63,14 +84,38 @@
   }
 
   h1{
-    font-size: 60px;
+    font-size: 4vw;
     padding: 1px;
     color: #f7b4a7;
     font-weight: bold
   }
 
+  @media (min-width: 768px) { /* Medium screens (tablets) */
+    h1 {
+      font-size: 4vw;
+    }
+  }
+  
+  @media (min-width: 1200px) { /* Large screens (desktops) */
+    h1 {
+      font-size: 3vw;
+    }
+  }
+
   .love{
     color: #9fcccd;
     text-align: left;
-    font-size: 26px;
+    font-size: 3vw;
+  }
+
+  @media (min-width: 768px) { /* Medium screens (tablets) */
+    .love {
+      font-size: 3vw;
+    }
+  }
+  
+  @media (min-width: 1200px) { /* Large screens (desktops) */
+    .love {
+      font-size: 2vw;
+    }
   }

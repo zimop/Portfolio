@@ -13,7 +13,7 @@ const Introduction: FC = () => {
       <div className = "first">
         <div className = "intro-container">
             <div className = "description">
-                <h1>Hi,<br/>I'm Zimo Peng</h1>
+                <h1>I'm<br/>Zimo Peng</h1>
                 <div className='love'>
                     I'm a developer that loves
                     <br/>
@@ -38,7 +38,7 @@ const Introduction: FC = () => {
                             1000,
                         ]}
                         speed={50}
-                        style={{ fontSize: '2em' }}
+                        style = {{fontWeight: 'bold'}}
                         repeat={Infinity}
                     />
                 </div>
