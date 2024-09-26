@@ -8,36 +8,17 @@
     height:auto
 }
 
+.icon{
+  background-color:black
+}
+
 .intro-container{
     text-align: center;
     display: flex;
     flex-direction: row;
-    width: 70%;
     position: relative;
-    background-color: #325a9f;
-    border-radius: 10px;
-    border: 4px solid;
+    width: 100%;
     padding:30px;
-}
-
-@media (min-width: 768px) { /* Medium screens (tablets and small desktops) */
-  .intro-container {
-    width: 60%;
-  }
-
-  h1{
-    font-size: 1vw;
-  }
-}
-
-@media (min-width: 1200px) { /* Large screens (desktops and large devices) */
-  .intro-container {
-    width: 50%;
-  }
-
-  h1{
-    font-size: 3vw;
-  }
 }
 
 .image{
@@ -64,7 +45,7 @@
     height: 700px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
 }
 
 @keyframes float {
@@ -86,7 +67,6 @@
   h1{
     font-size: 4vw;
     padding: 1px;
-    color: #f7b4a7;
     font-weight: bold
   }
 
@@ -103,7 +83,6 @@
   }
 
   .love{
-    color: #9fcccd;
     text-align: left;
     font-size: 3vw;
   }

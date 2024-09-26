@@ -5,6 +5,8 @@ import './../../styles/Introduction/styles.css'
 import zimo from './../../images/pictures/zimo-profile.png'
 import laptop from './../../images/icons/video-lesson.png'
 import { TypeAnimation } from 'react-type-animation';
+import Logo from '../general/Logo';
+import { Button } from '@mui/material';
 
 
 
@@ -13,40 +15,28 @@ const Introduction: FC = () => {
       <div className = "first">
         <div className = "intro-container">
             <div className = "description">
-                <h1>I'm<br/>Zimo Peng</h1>
+                <h1>Hi,<br/> I'm Zimo Peng</h1>
                 <div className='love'>
                     I'm a developer that loves
                     <br/>
                     <TypeAnimation
-                        sequence={[
-                            // Same substring at the start will only be typed once, initially
-                            'React.js',
-                            1000,
-                            'Next.js',
-                            1000,
-                            'Artificial Intelligence',
-                            1000,
-                            'Computer Vision',
-                            1000,
-                            'Java',
-                            1000,
-                            'Python',
-                            1000,
-                            'Solving Problems',
-                            1000,
-                            'Creating',
-                            1000,
-                        ]}
+                        sequence={['React.js', 1000, 'Next.js', 1000, 'Artificial Intelligence', 1000, 'Computer Vision', 1000,'Java', 1000, 'Python', 1000, 'Solving Problems', 1000, 'Creating', 1000]}
                         speed={50}
-                        style = {{fontWeight: 'bold'}}
+                        style = {{fontWeight: 'bold', color:"blue"}}
                         repeat={Infinity}
                     />
                 </div>
+                <div>
+                    <Button>
+                        Contact Me!
+                    </Button>
+                </div>
             </div>
-            <div className = "image">
-                 <img src = {laptop} className = "profile-container"/>
+            <div>
+                <Logo/>
             </div>
         </div>
+        
       </div>
     );
 };
