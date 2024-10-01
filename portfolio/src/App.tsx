@@ -6,17 +6,18 @@ import Skills from './components/Skills/app';
 import Projects from './components/Projects/app';
 import './globals.css'
 import NavBar from './components/general/NavBar';
+import { Router } from 'react-router-dom';
 
 function App() {
   return (
     <>
-      <div className = "layout">
-        <NavBar />
-        <Introduction />
-        <AboutMe />
-        <Skills />
-        <Projects />
-      </div>
+        <div className = "layout">
+          <NavBar />
+          <Introduction />
+          <AboutMe />
+          <Skills />
+          <Projects />
+        </div>
     </>
   );
 }

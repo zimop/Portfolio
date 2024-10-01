@@ -1,4 +1,5 @@
 import React, { FC, useState} from 'react';
+import { Link } from 'react-router-dom';
 import Hamburger from 'hamburger-react'
 import { slide as Menu } from 'react-burger-menu'
 import './../../styles/general/nav.css'
@@ -10,6 +11,9 @@ import { TypeAnimation } from 'react-type-animation';
 
 
 const NavBar: FC = () => {
+    const github_link = "https://github.com/zimop?tab=repositories"
+    const linkedin_link = "https://www.linkedin.com/in/zimo-peng-660272202/"
+
     return (
       <>
         <div style={{justifyContent:"space-between", display:"flex", padding: "20px"}} >
@@ -17,12 +21,16 @@ const NavBar: FC = () => {
                 <img src = {menu} style={{height: "auto", width: "40px"}}></img>
             </button>
             <div>
-                <button className = "icon pr-3">
-                    <img src = {github} style={{height: "auto", width: "40px"}}></img>
-                </button>
-                <button className = "icon">
-                    <img src = {linkedin} style={{height: "auto", width: "40px"}}></img>
-                </button>
+                <a href = {github_link} target="_blank" rel="noopener noreferrer">
+                    <button className = "icon pr-3">
+                        <img src = {github} style={{height: "auto", width: "40px"}}></img>
+                    </button>
+                </a>
+                <a href = {linkedin_link} target="_blank" rel="noopener noreferrer">
+                    <button className = "icon">
+                        <img src = {linkedin} style={{height: "auto", width: "40px"}}></img>
+                    </button>
+                </a>
             </div>
         </div>
       </>
